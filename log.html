@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Login Page</title>
+<!DOCTYPE html>
+<html>
+<title>
+AI Dietitian
+</title>
+<head>
+<style>
+*
+{
+margin: 0;
+padding: 0;
+}
+header
+{
+background-image:linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1))url(back.png);
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+.nav-bar
+{
+background: rgb(0, 0, 0, 1);
+height: 80px;
+}
+.logo
+{
+margin: 10px 50px;
+height: 60px;
+}
+.menu
+{
+float: right;
+list-style: none;
+margin: 20px;
+}
+.menu li{
+display: inline-block;
+margin: 10px 5px;
+}
+.menu li a{
+text-decoration: none;
+color: #fff;
+padding: 5px 10px;
+font-family: sans-serif;
+letter-spacing: 2px;
+border: 1px solid #fff;
+}
+.menu li a:hover{
+background: #fff;
+transition: .4s;
+color: #000;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  
+}
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 500px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="sticky">
+<div class="nav-bar">
+<ul class="menu">
+<li><a href="About.html">About</a></li>
+<li><a href="Contacts.html">Contact Details</a></li>
+<li><a href="recipe.html">Recipe</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<form name="loginForm" method="post" action="login.php">
+<table width="20%" bgcolor="D2691E" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=15 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><button onclick="return check(this.form)"><a href="main.html">Login</a></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "Innovation" && form.pwd.value == "Innovation")
+{
+	return true;
+}
+else
+{
+	alert("Wrong Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>

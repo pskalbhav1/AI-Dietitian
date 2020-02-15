@@ -1,0 +1,147 @@
+
+<html>
+<head>
+<titl>
+</title>
+<style>
+.nav-bar
+{
+background: rgb(0, 0, 0, 1);
+height: 80px;
+}
+.logo
+{
+margin: 10px 50px;
+height: 60px;
+}
+.menu
+{
+float: right;
+list-style: none;
+margin: 20px;
+}
+.menu li{
+display: inline-block;
+margin: 10px 5px;
+}
+.menu li a{
+text-decoration: none;
+color: #fff;
+padding: 5px 10px;
+font-family: sans-serif;
+letter-spacing: 2px;
+border: 1px solid #fff;
+}
+.menu li a:hover{
+background: #fff;
+transition: .4s;
+color: #000;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+
+
+
+</head>
+<body>
+<header>
+<div class="sticky">
+<div class="nav-bar">
+<ul class="menu">
+<li><a href="About.html">About</a></li>
+<li><a href="Contacts.html">Contact Details</a></li>
+<li><a href="recipe.html">Recipe</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</div>
+</div>
+<h1>
+BMI Calculation</h1>
+<h1 id="answer"></h1>
+
+ <center> Weight (in kgs)  :<input type="text" id="w"><br><br>
+  Enter height (in m): <input type="text" id="h"><br><br>
+
+  <input type="button" value="Submit" onclick="sumValues()"></center>
+
+
+
+<script>
+function sumValues()
+{
+var h1,w1,bmi;
+w1=document.getElementById("w").value;
+h1=document.getElementById("h").value;
+bmi=parseFloat(w1)/(parseFloat(h1)*parseFloat(h1));
+if(!isNaN(bmi))
+{
+         document.getElementById("answer").innerHTML="BMI: "+bmi;
+
+}
+
+}
+</script><center>
+<h2>BMI Table</h2>
+<h3>Check out your health status here!!</h3><center>
+
+<table>
+  <tr>
+    <th>BMI value</th>
+    <th>Health status</th>
+   
+  </tr>
+  <tr>
+    <td>&#60; 16</td>
+    <td>Severly Underweight</td>
+    
+  </tr>
+  <tr>
+    <td>16 &#8804 bmi and bmi &#60; 18.5</td>
+    <td>Underweight</td>
+    
+  </tr>
+  <tr>
+    <td>18.5 &#8804 bmi and bmi &#60; 25</td>
+    <td>Healthy</td>
+   
+  </tr>
+  <tr>
+    <td>25 &#8804 bmi and bmi &#60; 30</td>
+    <td>Overweight</td>
+    
+  </tr>
+<tr>
+    <td>30 &#8804 bmi</td>
+    <td>Severly Overweight</td>
+    
+  </tr>
+  
+  
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ 
+</body>
